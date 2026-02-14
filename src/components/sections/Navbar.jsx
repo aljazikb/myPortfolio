@@ -1,6 +1,8 @@
 
  import { useEffect } from "react"
  
+
+ 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
   useEffect(() => {
@@ -8,17 +10,16 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
   }, [menuOpen])
 
   return (
-    <nav className="fixed top-0 w-full z-40 bg-[rgba(10,10,10,0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
+    <nav className="fixed top-0 w-full  z-40 bg-[rgba(10, 10, 10, 0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg">
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
 
           {/* Left — Logo */}
           <a href="#home" className="flex items-center">
             <img
-              src="/Logo.jpeg"
+              src="/myPortfolio/Logo.jpeg"
               alt="Logo"
-              className="h-12 w-12 rounded-full object-cover"
-            />
+              className="h-12 w-12 rounded-full object-cover" />
           </a>
 
           {/* Right — Desktop Links */}
