@@ -74,7 +74,8 @@ export const About=()=>{
                             <h3 className="text-xl font-bold mb-4">Eduction</h3>
                             <ul >
                                 <li>
-                                    <strong>Bachelor in Information Technology (In Progress) </strong> – King Abdulaziz University, 2023 – Present
+                                    <strong>Bachelor in Information Technology (In Progress) </strong> 
+                                     <p className="text-sm">– King Abdulaziz University <br />2023 – Present</p> 
                                 </li>
                             </ul>
                         </div>
