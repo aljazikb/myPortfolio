@@ -35,7 +35,7 @@ export const Home = () => {
         <div className="relative z-10 text-center px-4">
           <h1
             className="text-5xl md:text-7xl font-bold mb-6
-                       bg-gradient-to-r from-[oklch(72.3%_0.219_149.579)] to-[oklch(90%_0.25_210)]
+                       bg-gradient-to-r from-white to-green-500
                        bg-clip-text text-transparent leading-tight"
           >
             Hi, I'm Aljazy

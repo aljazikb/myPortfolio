@@ -30,7 +30,7 @@ export const Contact =()=>{
         <section id="contact" className="miin-h-screen flex items-center justify-center py-20">
 
             <RevealOnScroll>
-                <div className="px-4 w-150">
+                <div className="px-4 w-full md:w-150">
 
                    
 
