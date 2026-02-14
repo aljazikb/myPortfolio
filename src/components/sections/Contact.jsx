@@ -1,6 +1,8 @@
 import { RevealOnScroll } from "./RevealOnScroll"
 import { useState } from "react"
 import emailjs from 'emailjs-com'
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin} from "react-icons/fa"
 
 export const Contact =()=>{
 
@@ -26,11 +28,35 @@ export const Contact =()=>{
     }
     return(
         <section id="contact" className="miin-h-screen flex items-center justify-center py-20">
+
             <RevealOnScroll>
                 <div className="px-4 w-150">
 
+                   
+
                     <h2 className="text-3xl font-bold mb-8  bg-gradient-to-r from-[oklch(72.3%_0.219_149.579)] to-[oklch(90%_0.25_210)] 
                     bg-clip-text text-transparent text-center "> Get In Touch</h2>
+
+                   <div  className="flex gap-4 space-y-7">
+                        <a
+                            href="https://github.com/aljazikb" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white hover:text-green-400">
+                            <FaGithub size={20} />
+                            GitHub
+                        </a>
+                        
+                        
+                         <a
+                            href="www.linkedin.com/in/aljazy-banaemah-183a983a7" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white hover:text-blue-400">
+                            <FaLinkedin size={20} />
+                            LinkedIn
+                        </a>
+                       <a
+                            href="https://x.com/ALJAZI310" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-5 h-5 rounded-full bg-black-800 text-white text-lg font-bold hover:bg-green-500 transition-colors"
+                            >
+                            X
+                        </a>
+
+                    </div>
 
                     <form className="space-y-6" onSubmit={handleSubmit}>
                             <div className="relative">

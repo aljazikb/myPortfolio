@@ -14,7 +14,7 @@ export const Home =()=>{
 
             <p classNmae="text-stone-500 text-lg mb-8 max-w-lg mx-auto">
                 Aspiring full-stack developer skilled in JavaScript, HTML, and CSS.<br /> 
-                 Passionate about building complete web applications and continuously 
+                 Passionate about building complete web applications and continuously <br />
                  expanding my front-end and back-end expertise.
             </p>
             <div className="flex justify-center space-x-4">
