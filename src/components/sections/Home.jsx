@@ -44,7 +44,7 @@ export const Home = () => {
           <p className="text-white-500 text-lg mb-8 max-w-lg mx-auto">
             Aspiring full-stack developer skilled in JavaScript, HTML, and CSS.
             Passionate about building complete web applications and continuously
-            expanding my front-end and back-end expertise.
+            expanding my front-end and back-end expertise
           </p>
 
           <div className="flex justify-center space-x-4">
