@@ -1,10 +1,14 @@
 import { RevealOnScroll } from "./RevealOnScroll"
 import { useState } from "react"
-import emailjs from 'emailjs-com'
+import emailjs from '@emailjs/browser'
+
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin} from "react-icons/fa"
 
 export const Contact =()=>{
+
+
+   
 
     const[formDate,setformData]=useState({
         name:"",
@@ -12,18 +16,21 @@ export const Contact =()=>{
         message:"",
     })
 
+    
    
 
     const handleSubmit=(e)=>{
         e.preventDefault()
 
-        emailjs.sendForm(import.meta.env.VITE_SERVICE_ID,import.meta.env.VITE_template_ID, e.target ,import.meta.env.VITE_PUBLIC_KEY)
+        emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID , e.target ,import.meta.env.VITE_PUBLIC_KEY)
         .then((req)=>{
             alert("Message Sent");
             setformData({name:"",email:"",message:""})
-        }).catch((error)=>{
-            alert("Something is wrong");
-        })
+
+        }).catch((error) => {
+        console.error("ERROR:", error);
+        alert("Something is wrong");
+    });
 
     }
     return(
@@ -46,7 +53,7 @@ export const Contact =()=>{
                         
                         
                          <a
-                            href="www.linkedin.com/in/aljazy-banaemah-183a983a7" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white hover:text-blue-400">
+                            href="https://www.linkedin.com/in/aljazy-banaemah-183a983a7" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-white hover:text-blue-400">
                             <FaLinkedin size={20} />
                             LinkedIn
                         </a>
@@ -76,7 +83,7 @@ export const Contact =()=>{
 
                             </div>
 
-                            <button type="submit" className="w-full bg-green-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5
+                            <button type="submit" className=" cursor-pointer w-full bg-green-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5
                               hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"> 
                                 Send Message
                             </button>
